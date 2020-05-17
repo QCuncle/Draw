@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/color_black" android:title="石墨黑" android:icon="@drawable/color0"/>
+    <item android:id="@+id/color_red" android:title="中国红" android:icon="@drawable/color1"/>
+    <item android:id="@+id/color_orange" android:title="落日黄" android:icon="@drawable/color2"/>
+    <item android:id="@+id/color_yellow" android:title="柠檬黄" android:icon="@drawable/color3"/>
+    <item android:id="@+id/color_green" android:title="孔雀绿" android:icon="@drawable/color4"/>
+    <item android:id="@+id/color_cyan" android:title="天空蓝" android:icon="@drawable/color5"/>
+    <item android:id="@+id/color_blue" android:title="宝石蓝" android:icon="@drawable/color6"/>
+    <item android:id="@+id/color_purple" android:title="基佬紫" android:icon="@drawable/color7"/>
+</menu>

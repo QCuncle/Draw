@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/drawbezier" android:title="自由画线" android:icon="@drawable/huabi"/>
+    <item android:id="@+id/drawline" android:title="直线" android:icon="@drawable/shape_zhixian"/>
+    <item android:id="@+id/drawrect" android:title="矩形" android:icon="@drawable/shape_juxing"/>
+    <item android:id="@+id/drawcircle" android:title="圆形" android:icon="@drawable/shape_yuan"/>
+    <item android:id="@+id/drawoval" android:title="椭圆" android:icon="@drawable/shape_tuoyuan"/>
+    <item android:id="@+id/drawroundrect" android:title="圆角矩形" android:icon="@drawable/shape_yuanjiaojuxing"/>
+</menu>
