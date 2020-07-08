@@ -1,6 +1,7 @@
 
 package com.qcuncle.draw;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -10,8 +11,10 @@ import android.graphics.Path;
 
 import android.graphics.RectF;
 import android.os.Build;
+
 import android.util.AttributeSet;
 import android.util.Base64;
+
 import android.view.MotionEvent;
 import android.view.View;
 import androidx.annotation.ColorInt;
@@ -303,23 +306,27 @@ public class DevinDrawPanle extends View {
         mTempBitmap = Bitmap.createBitmap(mBitmap);//保存临时图片
     }
 
+    @SuppressLint("WrongThread")
     @RequiresApi(api = Build.VERSION_CODES.FROYO)
     public void bitmapToString() {
         //将Bitmap转换成字符串
         ByteArrayOutputStream bStream = new ByteArrayOutputStream();
         mBitmap.compress(Bitmap.CompressFormat.PNG, 100, bStream);//压缩图像到输出流
         byte[] bitmapBytes = bStream.toByteArray();
-        str = Base64.encodeToString(bitmapBytes, Base64.DEFAULT);
+        str = Base64.encodeToString(bitmapBytes,Base64.DEFAULT);
     }
     /**
      * 保存图片
      *
      */
+    @SuppressLint("WrongThread")
     public void saveBitmap(File file) {
         //如果文件夹不存在则创建
+        /**
         if (!file.getParentFile().exists()) {
             file.getParentFile().mkdirs();
         }
+         **/
         //如果文件不存在则创建
         if (!file.exists()) {
             try {
@@ -412,7 +419,6 @@ public class DevinDrawPanle extends View {
 
     /**
      * 获得画布
-     *
      * @return
      */
     public Canvas getCanvas() {
@@ -432,8 +438,6 @@ public class DevinDrawPanle extends View {
             e.printStackTrace();
         }
     }
-
-
  */
 
 
@@ -459,3 +463,5 @@ public class DevinDrawPanle extends View {
         this.shapeStyle = shapeStyle;
     }
 }
+
+
